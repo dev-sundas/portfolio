@@ -1,4 +1,4 @@
-import { aboutdataType, cardType, heroType, projectType, serviceType } from "./type";
+import { aboutdataType, cardType, contactType, heroType, projectType, serviceType } from "./type";
 
 export const heroSectionData : heroType[]=[{
     id:1,
@@ -146,3 +146,39 @@ export const cardData:cardType[]=[{
 
 }
 ]
+
+export const contactSectionData: contactType[] = [
+  
+    {
+      id: 2,
+      heading: "Mail :",
+      paragraph: "hello@react.dev",
+    },
+    {
+      id: 3,
+      heading: "Address :",
+      paragraph: "Hello street  New York",
+    },
+    {
+      id: 4,
+      heading: "Phone :",
+      paragraph: "+1 2345678910",
+    },
+    {
+        id: 5,
+        heading: "Facebook :",
+        paragraph: "Your Facebook",
+      },
+      {
+        id: 6,
+        heading: "Instagram :",
+        paragraph: "@yourInstagram",
+      },
+      {
+        id: 7,
+        heading: "Twitter :",
+        paragraph: "@yourTwitter",
+      }
+    
+     
+  ];

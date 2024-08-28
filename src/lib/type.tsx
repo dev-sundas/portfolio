@@ -52,10 +52,8 @@ export type cardType = {
     link2:string
     imageUrl:string
 }
-export const ContactSchema = z.object({
-    name: z.string(),
-    email: z.string(),
-    message: z.string()
-})
-
-export type ContactType = z.infer<typeof ContactSchema>
+export type contactType = {
+    id: number
+    heading: string
+    paragraph: string
+}
