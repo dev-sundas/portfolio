@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import { aboutdataType, cardType, heroType, projectType, serviceType } from "@/lib/type";
+import { aboutdataType, cardType, contactType, heroType, projectType, serviceType } from "@/lib/type";
 import { aboutSectionData, cardData, contactSectionData, heroSectionData, projectsSectionData, serviceSectionData } from "@/lib/db";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -13,7 +13,7 @@ const aboutdata : aboutdataType[] = aboutSectionData
 const servicedata:serviceType[]=serviceSectionData
 const carddata:cardType[]=cardData
 const projectdata:projectType[]=projectsSectionData
-const contactdata:projectType[]=contactSectionData
+const contactdata:contactType[]=contactSectionData
 
 export default function Home() {
   return (

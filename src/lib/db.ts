@@ -151,32 +151,32 @@ export const contactSectionData: contactType[] = [
   
     {
       id: 2,
-      heading: "Mail :",
+      heading: "Mail",
       paragraph: "hello@react.dev",
     },
     {
       id: 3,
-      heading: "Address :",
+      heading: "Address",
       paragraph: "Hello street  New York",
     },
     {
       id: 4,
-      heading: "Phone :",
+      heading: "Phone",
       paragraph: "+1 2345678910",
     },
     {
         id: 5,
-        heading: "Facebook :",
+        heading: "Facebook",
         paragraph: "Your Facebook",
       },
       {
         id: 6,
-        heading: "Instagram :",
+        heading: "Instagram",
         paragraph: "@yourInstagram",
       },
       {
         id: 7,
-        heading: "Twitter :",
+        heading: "Twitter",
         paragraph: "@yourTwitter",
       }
     

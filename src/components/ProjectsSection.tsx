@@ -83,7 +83,7 @@ export default function ProjectsSection({ projectdata, carddata }: Props) {
                     ))}
                 </CarouselContent>
             </Carousel>
-            <Image src={"/images/whitecube.png"} alt="contact" width={200} height={200}/>
+            <Image src={"/images/whitecube.png"} alt="contact" width={200} height={200} className="hidden md:flex"/>
         </div>
     );
 }
