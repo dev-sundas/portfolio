@@ -1,13 +1,13 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import { aboutdataType, cardType, contactType, heroType, projectType, serviceType } from "@/lib/type";
-import { aboutSectionData, cardData, contactSectionData, heroSectionData, projectsSectionData, serviceSectionData } from "@/lib/db";
+import { aboutdataType, cardType, contactType, headerType, heroType, projectType, serviceType } from "@/lib/type";
+import { aboutSectionData, cardData, contactSectionData, HeaderSectionData, heroSectionData, projectsSectionData, serviceSectionData } from "@/lib/db";
 import AboutSection from "@/components/AboutSection";
 import ServicesSection from "@/components/ServicesSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
  
-
+const headerdata:headerType[]=HeaderSectionData
 const herodata : heroType[] = heroSectionData
 const aboutdata : aboutdataType[] = aboutSectionData
 const servicedata:serviceType[]=serviceSectionData
@@ -19,7 +19,7 @@ export default function Home() {
   return (
    <main >
     <section id="home">
-    <Header/>
+    <Header headerdata={headerdata}/>
     <HeroSection data={herodata}/>
     </section>
     <section id="about">
