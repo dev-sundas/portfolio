@@ -27,6 +27,7 @@ heading1:string,
 heading2:string,
 paragraph1:string,
 paragraph2:string,
+link:string
 imageUrl:{
     id:number,
     icon:string,

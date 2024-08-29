@@ -34,7 +34,7 @@ export default function ServicesSection({ serviceData }: Props) {
                         <h1 className='text-[39px] my-2 md:text-[56px]'>{item.heading2}</h1>
                         <p className='my-3'>{item.paragraph1}</p>
                         <p className='w-[100%] m-auto mb-5 md:w-[750px]'>{item.paragraph2}</p>
-                        <p>Visit my <Link href={""} className='text-[#f4a949] hover:underline'>Linkedin</Link> for more details.</p>
+                        <p>Visit my <Link href={""} className='text-[#f4a949] hover:underline'>{item.link}</Link> for more details.</p>
                     </motion.div>
                     <motion.div
                         className='grid grid-cols-3 w-[100%] m-auto mt-10 md:grid-cols-7 md:w-[90%]'
