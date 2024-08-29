@@ -31,9 +31,9 @@ export default function ServicesSection({ serviceData }: Props) {
                   style={{ y: yTransform, opacity: opacityTransform }} transition={{
                     duration: 2,  delay: 0.5 + 0.1 * index   }} >
                         <h2 className='text-[14px] px-2 opacity-20 md:text-[18px]'>{item.heading1}</h2>
-                        <h1 className='text-[27px] my-2 md:text-[56px]'>{item.heading2}</h1>
+                        <h1 className='text-[39px] my-2 md:text-[56px]'>{item.heading2}</h1>
                         <p className='my-3'>{item.paragraph1}</p>
-                        <p className='w-[300px] m-auto mb-5 md:w-[750px]'>{item.paragraph2}</p>
+                        <p className='w-[100%] m-auto mb-5 md:w-[750px]'>{item.paragraph2}</p>
                         <p>Visit my <Link href={""} className='text-[#f4a949] hover:underline'>Linkedin</Link> for more details.</p>
                     </motion.div>
                     <motion.div
