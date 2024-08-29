@@ -33,8 +33,8 @@ export default function ProjectsSection({ projectdata, carddata }: Props) {
                           <Image src={"/images/sphereSm.png"} alt="sphereSm"width={50} height={50} className="absolute top-48 left-12 bottom-48 md:top-28 md:left-20  "/>
                             <div className={`${poppins.className} text-start w-full m-auto md:text-center md:w-[550px] z-10`}>
                                 <h1 className="text-[27px] leading-10 md:text-[56px] md:leading-tight">{item.heading}</h1>
-                                <p className="text-start text-[14px] py-3 md:text-center md:text-[16px]">{item.paragraph} <Link href={""} className="text-[#f4a949] font-semibold">{item.link1}</Link></p>
-                                <Link href={"#projects"} className="text-[#9c27b0] font-semibold">{item.link2}</Link>
+                                <p className="text-start text-[14px] py-3 md:text-center md:text-[16px]">{item.paragraph} <Link href={item.link1} className="text-[#f4a949] font-semibold">{item.linkText1}</Link></p>
+                                <Link href={item.link2} className="text-[#9c27b0] font-semibold">{item.linkText2}</Link>
                             </div>
                             <div>
                                 <Image src={"/images/sphereLg.png"} alt="sphereLg"width={150} height={150} className="absolute top-80 left-20 md:left-auto md:right-0"/>
@@ -55,8 +55,8 @@ export default function ProjectsSection({ projectdata, carddata }: Props) {
                                         <p className="py-4">{items.paragraph2}</p>
                                     </div>
                                     <div>
-                                        <Link href={""}>{items.link1}</Link><br />
-                                        <Link href={""} className="text-[#f4a949]">{items.link2}</Link>
+                                        <Link href={items.link1}>{items.linkText1}</Link><br />
+                                        <Link href={items.link2} className="text-[#f4a949]">{items.linkText2}</Link>
                                     </div>
                                 </div>
                                 <div className="relative order-1 md:order-2">

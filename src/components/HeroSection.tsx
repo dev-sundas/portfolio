@@ -26,8 +26,8 @@ export default function Hero({ data }: Props) {
             <div className='flex flex-col justify-between md:flex-row'>
             
             <motion.p whileHover={{ scale: 1.1 }}>
-            <Link href={'#about'} className='flex items-center text-[#9c27b0] font-semibold'>
-              {item.link}
+            <Link href={item.link} className='flex items-center text-[#9c27b0] font-semibold'>
+              {item.linkText}
             </Link>
           </motion.p>
               <Image

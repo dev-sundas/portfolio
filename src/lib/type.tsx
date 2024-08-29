@@ -1,5 +1,11 @@
 import { z } from "zod"
 
+export type headerType={
+    id:number,
+    heading:string
+    link:string
+    linkText:string
+}
 export type heroType = {
     id:number
     image:string
@@ -8,6 +14,7 @@ export type heroType = {
     heading:string
     paragraph:string
     link:string
+    linkText:string
 }
 
 export type aboutdataType = {
@@ -28,6 +35,7 @@ heading2:string,
 paragraph1:string,
 paragraph2:string,
 link:string
+linkText:string
 imageUrl:{
     id:number,
     icon:string,
@@ -41,6 +49,9 @@ export type projectType = {
     paragraph:string
     link1:string
     link2:string
+    linkText1:string
+    linkText2:string
+
 }
 
 export type cardType = {
@@ -51,6 +62,8 @@ export type cardType = {
     paragraph2:string
     link1:string
     link2:string
+    linkText1:string
+    linkText2:string
     imageUrl:string
 }
 export type contactType = {

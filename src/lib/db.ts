@@ -1,5 +1,12 @@
-import { aboutdataType, cardType, contactType, heroType, projectType, serviceType } from "./type";
+import { aboutdataType, cardType, contactType, headerType, heroType, projectType, serviceType } from "./type";
 
+export const HeaderSectionData:headerType[]=[{
+    id:1,
+    heading:"Developer",
+    link:"#contactSection",
+    linkText:"Contact US"
+
+}]
 export const heroSectionData : heroType[]=[{
     id:1,
     image:"/images/image.png",
@@ -7,7 +14,8 @@ export const heroSectionData : heroType[]=[{
     squareimage:"/images/square.png",
     heading:"Front-End Software Developer",
     paragraph:"Resolving design problems, building smart user interfaces and useful interactions, developing rich web applications and seamless web experiences.",
-    link:"About Me >"
+    link:"#about",
+    linkText:"About Me >"
 }]
 
 export const aboutSectionData:aboutdataType[]=[{
@@ -28,7 +36,8 @@ export const serviceSectionData:serviceType[]=[{
     heading2:"Skills & Experience",
     paragraph1:"The main area of expertise is front end development (client side of the web).",
     paragraph2:"HTML, CSS, JS, building small and medium web applications with Vue or React, custom plugins, features, animations, and coding interactive layouts. I have also full-stack developer experience with one of the most popular open source CMS on the web - WordPress",
-    link:"Linkedin",
+    link:"",
+    linkText:"Linkedin",
     imageUrl:[
     {
         id:1,
@@ -120,8 +129,11 @@ export const projectsSectionData:projectType[]=[{
     id:1,
     heading:"Portfolio & Previous Projects",
     paragraph:"I have built various different projects to fit different aspects of the client's business. If you want to see more examples of my work than the ones showcased in this site, please",
-    link1:"contact me!",
-    link2:"See Projects >"
+    linkText1:"contact me!",
+    linkText2:"See Projects >",
+    link1:"#contactSection",
+    link2:"#projects"
+
 }]
 
 export const cardData:cardType[]=[{
@@ -130,9 +142,11 @@ export const cardData:cardType[]=[{
     heading2:"Crown Clothing",
     paragraph1:"Online store for selling apparel & foot wear.",
     paragraph2:"Built with: React, Redux, Node, JavaScript, SASS, Custom Stripe Integration, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting).",
-    link1:"View the code >",
-    link2:"Visit the app >",
-        imageUrl:"/images/macbook.png",
+    linkText1:"View the code >",
+    linkText2:"Visit the app >",
+    link1:"",
+    link2:"",
+    imageUrl:"/images/macbook.png",
        
 },
 {
@@ -141,9 +155,11 @@ export const cardData:cardType[]=[{
     heading2:"Fit & Healthy",
     paragraph1:"Server rendered, progressive web application for online fitness & health coaching. Providing workout programs, nutritions plans, workout logs, follow up with client's progress and more.",
     paragraph2:"Built with: NuxtJs, VueJs, JavaScript, Firebase (NoSQL Database, Cloud Functions, Cloud Storage, Hosting), SASS.",
-    link1:"View the code >",
-    link2:"Visit the app >",
-        imageUrl:"/images/phone.png"
+    linkText1:"View the code >",
+    linkText2:"Visit the app >",
+    link1:"",
+    link2:"",
+    imageUrl:"/images/phone.png"
 
 }
 ]
